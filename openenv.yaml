@@ -1,0 +1,26 @@
+name: Corporate Strategy OpenEnv
+version: 1.0.0
+description: A deterministic OpenEnv benchmark simulating corporate strategy execution against market competitors using dense resources, resource protection, and hostile takeovers without randomness.
+entry_point: env.environment:CorporateMarketEnv
+
+tasks:
+  - id: task1
+    name: Market Expansion
+    difficulty: Easy
+    description: Advance an Intern horizontally to the competitor baseline to maximize isolated market spread.
+    setup: tasks/task1.py:setup_task1
+    grader: grader.grader:grade_task1_market_expansion
+
+  - id: task2
+    name: Resource Optimization
+    difficulty: Medium
+    description: Reallocate a lateral Team to defend a highly valuable central PR asset from an R&D threat.
+    setup: tasks/task2.py:setup_task2
+    grader: grader.grader:grade_task2_resource_optimization
+
+  - id: task3
+    name: Corporate Domination
+    difficulty: Hard
+    description: Sequence an L-shaped aggressive maneuver using R&D to breach heavy defenses and invoke a Hostile Takeover on the competitor CEO.
+    setup: tasks/task3.py:setup_task3
+    grader: grader.grader:grade_task3_corporate_domination
